@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Adil Makhdoom - Web Designer & Developer</title>
+  <meta name="description" content="Adil Makhdoom – Front-End Developer & Designer. Explore my personal portfolio built with HTML, CSS, Bootstrap, and JavaScript.">
+  <meta name="keywords" content="Adil Makhdoom, front-end developer, HTML CSS portfolio, Bootstrap developer, JavaScript projects">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+  <!-- Vendor CSS Files -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header">
+    <div class="header-container">
+      <!-- Logo/Brand Section -->
+      <div class="header-logo">
+        <div class="profile-img float-animation">
+          <img src="https://via.placeholder.com/150x150/667eea/ffffff?text=AM" alt="Adil Makhdoom" class="img-fluid rounded-circle glow-on-hover">
+        </div>
+        <div class="header-brand">
+          <h1>Adil Makhdoom</h1>
+          <p class="subtitle">Web Designer & Developer</p>
+        </div>
+      </div>
+      
+      <!-- Navigation Menu -->
+      <nav id="navmenu" class="navmenu">
+        <ul class="nav">
+          <li class="nav-item"><a href="#home" class="nav-link active"><i class="bi bi-house"></i> Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link"><i class="bi bi-person"></i> About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link"><i class="bi bi-gear"></i> Skills</a></li>
+          <li class="nav-item"><a href="#resume" class="nav-link"><i class="bi bi-file-earmark-text"></i> Resume</a></li>
+          <li class="nav-item"><a href="#portfolio" class="nav-link"><i class="bi bi-images"></i> Portfolio</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link"><i class="bi bi-hdd-stack"></i> Services</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link"><i class="bi bi-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Social Links -->
+      <div class="header-social">
+        <a href="https://www.linkedin.com/in/adilmakhdoom" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/adilmakhdoom" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.upwork.com/freelancers/adilmakhdoom" target="_blank"><i class="bi bi-briefcase"></i></a>
+        <a href="mailto:adil@example.com"><i class="bi bi-envelope"></i></a>
+      </div>
+      
+      <!-- Mobile Menu Toggle -->
+      <div class="mobile-toggle" id="mobile-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Home Section -->
+    <section id="home" class="hero d-flex align-items-center">
+      <div class="container text-center">
+        <div class="hero-content">
+          <h1 class="hero-name">Hello, I'm Adil Makhdoom</h1>
+          <p class="hero-title">A passionate Web Designer & Developer creating stunning digital experiences</p>
+          <div class="hero-buttons mt-4">
+            <a href="#portfolio" class="btn btn-primary me-3">View My Work</a>
+            <a href="#contact" class="btn btn-outline-primary">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="section-title text-center mb-5 animate-on-scroll">
+          <h2>About Me</h2>
+          <div class="section-divider"></div>
+          <p class="section-description">Get to know more about who I am and what I do</p>
+        </div>
+        
+        <div class="row align-items-center">
+          <div class="col-lg-4 mb-4">
+            <div class="about-img text-center animate-left">
+              <img src="https://via.placeholder.com/300x400/667eea/ffffff?text=Adil+Makhdoom" alt="Adil Makhdoom" class="img-fluid rounded glow-on-hover">
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="about-content animate-right">
+              <h3>Web Designer & Front-End Developer</h3>
+              <p class="about-text">
+                I'm a passionate web designer and front-end developer from Lahore, Pakistan, with over 5 years of experience in creating beautiful, functional, and user-friendly websites. I specialize in HTML, CSS, JavaScript, WordPress, and modern web technologies.
+              </p>
+              <p class="about-text">
+                My journey in web development started with a curiosity about how websites work, and it has evolved into a passion for creating digital experiences that not only look great but also perform exceptionally well. I believe in clean code, responsive design, and user-centered development.
+              </p>
+              
+              <div class="row mt-4">
+                <div class="col-md-6">
+                  <ul class="about-details">
+                    <li><i class="bi bi-calendar"></i> <strong>Birthday:</strong> 18th November 1990</li>
+                    <li><i class="bi bi-geo-alt"></i> <strong>City:</strong> Lahore, Pakistan</li>
+                    <li><i class="bi bi-mortarboard"></i> <strong>Degree:</strong> Master in Computer Science</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul class="about-details">
+                    <li><i class="bi bi-person"></i> <strong>Age:</strong> 34 years</li>
+                    <li><i class="bi bi-envelope"></i> <strong>Email:</strong> adil@example.com</li>
+                    <li><i class="bi bi-check-circle"></i> <strong>Freelance:</strong> Available</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="mt-4">
+                <a href="#contact" class="btn btn-primary">Hire Me</a>
+                <a href="#" class="btn btn-outline-primary ms-3">Download CV</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+      <div class="container">
+        <div class="section-title text-center mb-5 animate-on-scroll">
+          <h2>My Skills</h2>
+          <div class="section-divider"></div>
+          <p class="section-description">Technologies and tools I work with</p>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <div class="skill-item animate-left animate-delay-1">
+              <div class="skill-info d-flex justify-content-between">
+                <span class="skill-name">HTML5 & CSS3</span>
+                <span class="skill-percentage">95%</span>
+              </div>
+              <div class="skill-progress" data-percentage="95">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item animate-left animate-delay-2">
+              <div class="skill-info d-flex justify-content-between">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-percentage">85%</span>
+              </div>
+              <div class="skill-progress" data-percentage="85">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item animate-left animate-delay-3">
+              <div class="skill-info d-flex justify-content-between">
+                <span class="skill-name">Bootstrap</span>
+                <span class="skill-percentage">90%</span>
+              </div>
+              <div class="skill-progress" data-percentage="90">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-6 mb-4">
+            <div class="skill-item animate-right animate-delay-1">
+              <div class="skill-info d-flex justify-content-between">
+                <span class="skill-name">WordPress</span>
+                <span class="skill-percentage">92%</span>
+              </div>
+              <div class="skill-progress" data-percentage="92">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item animate-right animate-delay-2">
+              <div class="skill-info d-flex justify-content-between">
+                <span class="skill-name">Wix & Elementor</span>
+                <span class="skill-percentage">88%</span>
+              </div>
+              <div class="skill-progress" data-percentage="88">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item animate-right animate-delay-3">
+              <div class="skill-info d-flex justify-content-between">
+                <span class="skill-name">SEO & Web Optimization</span>
+                <span class="skill-percentage">80%</span>
+              </div>
+              <div class="skill-progress" data-percentage="80">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+      <div class="container">
+        <div class="section-title text-center mb-5">
+          <h2>My Resume</h2>
+          <div class="section-divider"></div>
+          <p class="section-description">My professional journey and educational background</p>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="resume-title">Education</h3>
+            
+            <div class="resume-item">
+              <h4>Master of Computer Science</h4>
+              <h5>2016 - 2017</h5>
+              <p><em>COMSATS Institute of Information Technology, Lahore</em></p>
+              <p>Specialized in software engineering, web technologies, and database management. Completed advanced coursework in modern web frameworks and development methodologies.</p>
+            </div>
+            
+            <div class="resume-item">
+              <h4>Master of Commerce</h4>
+              <h5>2011 - 2013</h5>
+              <p><em>Federal Urdu University of Arts, Science and Technology, Karachi</em></p>
+              <p>Focused on business administration, digital marketing, and e-commerce strategies that complement my technical skills in web development.</p>
+            </div>
+            
+            <div class="resume-item">
+              <h4>Bachelor of Commerce</h4>
+              <h5>2009 - 2010</h5>
+              <p><em>Superior College, Lahore</em></p>
+              <p>Foundation in business principles, economics, and entrepreneurship that helps me understand client needs and business objectives.</p>
+            </div>
+          </div>
+          
+          <div class="col-lg-6">
+            <h3 class="resume-title">Professional Experience</h3>
+            
+            <div class="resume-item">
+              <h4>Senior Web Developer</h4>
+              <h5>2020 - Present</h5>
+              <p><em>Freelance / Multiple Clients</em></p>
+              <ul>
+                <li>Designed and developed 50+ responsive websites using WordPress, Wix, and custom HTML/CSS</li>
+                <li>Implemented SEO best practices resulting in 40% average increase in organic traffic</li>
+                <li>Collaborated with design teams to create pixel-perfect implementations</li>
+                <li>Managed hosting, domain setup, and website maintenance for multiple clients</li>
+              </ul>
+            </div>
+            
+            <div class="resume-item">
+              <h4>Front-End Developer</h4>
+              <h5>2018 - 2020</h5>
+              <p><em>Digital Solutions Agency</em></p>
+              <ul>
+                <li>Developed interactive web applications using JavaScript and modern frameworks</li>
+                <li>Created custom WordPress themes and plugins for client requirements</li>
+                <li>Optimized website performance achieving 95+ PageSpeed scores</li>
+                <li>Mentored junior developers and conducted code reviews</li>
+              </ul>
+            </div>
+            
+            <div class="resume-item">
+              <h4>Web Designer</h4>
+              <h5>2016 - 2018</h5>
+              <p><em>Creative Web Studio</em></p>
+              <ul>
+                <li>Designed and coded landing pages for marketing campaigns</li>
+                <li>Converted PSD designs to responsive HTML/CSS layouts</li>
+                <li>Implemented cross-browser compatibility and mobile optimization</li>
+                <li>Collaborated with UX designers to improve user experience</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+      <div class="container">
+        <div class="section-title text-center mb-5 animate-on-scroll">
+          <h2>My Portfolio</h2>
+          <div class="section-divider"></div>
+          <p class="section-description">Some of my recent work and projects</p>
+        </div>
+        
+        <!-- Portfolio Filters -->
+        <div class="portfolio-filters text-center mb-5 animate-fade animate-delay-1">
+          <button class="portfolio-filter active" data-filter="all">All</button>
+          <button class="portfolio-filter" data-filter="web-design">Web Design</button>
+          <button class="portfolio-filter" data-filter="wordpress">WordPress</button>
+          <button class="portfolio-filter" data-filter="ecommerce">E-commerce</button>
+        </div>
+        
+        <div class="row portfolio-container">
+          <div class="col-lg-4 col-md-6 mb-4 portfolio-item web-design">
+            <div class="portfolio-card animate-scale animate-delay-1">
+              <div class="portfolio-img">
+                <img src="https://via.placeholder.com/400x250/667eea/ffffff?text=Metro+Tasker" alt="Metro Tasker" class="img-fluid">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-info">
+                    <h4>Metro Tasker</h4>
+                    <p>Service Website</p>
+                    <div class="portfolio-links">
+                      <a href="#" class="portfolio-link"><i class="bi bi-eye"></i></a>
+                      <a href="#" class="portfolio-link"><i class="bi bi-link-45deg"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 mb-4 portfolio-item wordpress">
+            <div class="portfolio-card animate-scale animate-delay-2">
+              <div class="portfolio-img">
+                <img src="https://via.placeholder.com/400x250/764ba2/ffffff?text=Corporate+Site" alt="Corporate Website" class="img-fluid">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-info">
+                    <h4>Corporate Website</h4>
+                    <p>WordPress Development</p>
+                    <div class="portfolio-links">
+                      <a href="#" class="portfolio-link"><i class="bi bi-eye"></i></a>
+                      <a href="#" class="portfolio-link"><i class="bi bi-link-45deg"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 mb-4 portfolio-item ecommerce">
+            <div class="portfolio-card animate-scale animate-delay-3">
+              <div class="portfolio-img">
+                <img src="https://via.placeholder.com/400x250/28a745/ffffff?text=E-Shop" alt="E-commerce Store" class="img-fluid">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-info">
+                    <h4>Online Store</h4>
+                    <p>E-commerce Solution</p>
+                    <div class="portfolio-links">
+                      <a href="#" class="portfolio-link"><i class="bi bi-eye"></i></a>
+                      <a href="#" class="portfolio-link"><i class="bi bi-link-45deg"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 mb-4 portfolio-item web-design">
+            <div class="portfolio-card animate-scale animate-delay-4">
+              <div class="portfolio-img">
+                <img src="https://via.placeholder.com/400x250/dc3545/ffffff?text=Portfolio+Site" alt="Portfolio Website" class="img-fluid">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-info">
+                    <h4>Portfolio Website</h4>
+                    <p>Personal Branding</p>
+                    <div class="portfolio-links">
+                      <a href="#" class="portfolio-link"><i class="bi bi-eye"></i></a>
+                      <a href="#" class="portfolio-link"><i class="bi bi-link-45deg"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 mb-4 portfolio-item wordpress">
+            <div class="portfolio-card animate-scale animate-delay-5">
+              <div class="portfolio-img">
+                <img src="https://via.placeholder.com/400x250/6f42c1/ffffff?text=Blog+Site" alt="Blog Website" class="img-fluid">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-info">
+                    <h4>Blog Website</h4>
+                    <p>Content Management</p>
+                    <div class="portfolio-links">
+                      <a href="#" class="portfolio-link"><i class="bi bi-eye"></i></a>
+                      <a href="#" class="portfolio-link"><i class="bi bi-link-45deg"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 mb-4 portfolio-item web-design">
+            <div class="portfolio-card animate-scale animate-delay-6">
+              <div class="portfolio-img">
+                <img src="https://via.placeholder.com/400x250/fd7e14/ffffff?text=Landing+Page" alt="Landing Page" class="img-fluid">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-info">
+                    <h4>Landing Page</h4>
+                    <p>Marketing Campaign</p>
+                    <div class="portfolio-links">
+                      <a href="#" class="portfolio-link"><i class="bi bi-eye"></i></a>
+                      <a href="#" class="portfolio-link"><i class="bi bi-link-45deg"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+      <div class="container">
+        <div class="section-title text-center mb-5 animate-on-scroll">
+          <h2>My Services</h2>
+          <div class="section-divider"></div>
+          <p class="section-description">What I can do for you</p>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="service-item text-center animate-scale animate-delay-1">
+              <div class="service-icon">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <h4>Web Development</h4>
+              <p>Custom websites built with modern technologies, responsive design, and clean code that performs across all devices and browsers.</p>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="service-item text-center animate-scale animate-delay-2">
+              <div class="service-icon">
+                <i class="bi bi-wordpress"></i>
+              </div>
+              <h4>WordPress Development</h4>
+              <p>Custom WordPress themes, plugin development, and site optimization for speed, security, and search engine visibility.</p>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="service-item text-center animate-scale animate-delay-3">
+              <div class="service-icon">
+                <i class="bi bi-palette"></i>
+              </div>
+              <h4>UI/UX Design</h4>
+              <p>User-centered design approach creating intuitive interfaces that provide excellent user experience and drive conversions.</p>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="service-item text-center animate-scale animate-delay-4">
+              <div class="service-icon">
+                <i class="bi bi-shop"></i>
+              </div>
+              <h4>E-commerce Solutions</h4>
+              <p>Complete online store development with payment integration, inventory management, and optimization for maximum sales.</p>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="service-item text-center animate-scale animate-delay-5">
+              <div class="service-icon">
+                <i class="bi bi-search"></i>
+              </div>
+              <h4>SEO Optimization</h4>
+              <p>Comprehensive SEO services including on-page optimization, technical SEO, and performance improvements for better rankings.</p>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="service-item text-center animate-scale animate-delay-6">
+              <div class="service-icon">
+                <i class="bi bi-tools"></i>
+              </div>
+              <h4>Website Maintenance</h4>
+              <p>Ongoing website support, updates, security monitoring, and performance optimization to keep your site running smoothly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="section-title text-center mb-5">
+          <h2>Contact Me</h2>
+          <div class="section-divider"></div>
+          <p class="section-description">Let's work together on your next project</p>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Location</h4>
+                  <p>Lahore, Punjab, Pakistan</p>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Email</h4>
+                  <p>adil@example.com</p>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="bi bi-phone"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Phone</h4>
+                  <p>+92 XXX XXXXXXX</p>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="bi bi-clock"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Availability</h4>
+                  <p>Mon-Fri: 9AM-6PM PST</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-8">
+            <form id="contact-form" class="contact-form" action="send_email.php" method="POST">
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="mb-3">
+                <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+              </div>
+              <div class="mb-3">
+                <textarea name="message" class="form-control" rows="6" placeholder="Your Message" required></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer text-center">
+    <div class="container">
+      <div class="social-links mb-3">
+        <a href="https://www.linkedin.com/in/adilmakhdoom" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/adilmakhdoom" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.upwork.com/freelancers/adilmakhdoom" target="_blank"><i class="bi bi-briefcase"></i></a>
+        <a href="https://www.freelancer.com/u/coolfire7474" target="_blank"><i class="bi bi-person-workspace"></i></a>
+      </div>
+      <p>&copy; 2024 Designed By <strong>Adil Makhdoom</strong>. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Vendor JS Files -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
