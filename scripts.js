@@ -159,23 +159,19 @@ function initContactForm() {
     
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
+            // Let the form submit naturally to Formspree
+            // Just show a loading state
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
             
-            // Get form data
-            const formData = new FormData(this);
-            const name = formData.get('name');
-            const email = formData.get('email');
-            const message = formData.get('message');
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
             
-            // Simple validation
-            if (!name || !email || !message) {
-                showNotification('Please fill in all fields', 'error');
-                return;
-            }
-            
-            // Simulate form submission
-            showNotification('Thank you for your message! I will get back to you soon.', 'success');
-            this.reset();
+            // Re-enable after a delay (Formspree will redirect)
+            setTimeout(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }, 3000);
         });
     }
 }

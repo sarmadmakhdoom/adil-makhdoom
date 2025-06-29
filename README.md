@@ -25,7 +25,7 @@ A modern, responsive portfolio website showcasing web design and development ski
 - **Resume** - Education and work experience timeline
 - **Portfolio** - Filterable project showcase with overlays
 - **Services** - Available services with interactive icons
-- **Contact** - Contact form with PHP email integration
+- **Contact** - Contact form with Formspree integration
 
 ## 🛠️ Technologies Used
 
@@ -33,7 +33,7 @@ A modern, responsive portfolio website showcasing web design and development ski
 - **CSS3** - Flexbox, Grid, animations, and glassmorphism effects
 - **JavaScript (ES6+)** - Interactive features and animations
 - **Bootstrap 5** - Responsive grid system and components
-- **PHP** - Contact form email handling with Mailgun
+- **Formspree** - Contact form handling for static hosting
 - **Bootstrap Icons** - Scalable vector icons
 
 ## 🎭 Animation Features
@@ -49,10 +49,9 @@ A modern, responsive portfolio website showcasing web design and development ski
 
 ```
 adil-makhdoom/
-├── index.php          # Main website file
+├── index.html         # Main website file
 ├── styles.css         # All CSS styles and animations
 ├── scripts.js         # JavaScript functionality
-├── send_email.php     # PHP email handler (requires setup)
 └── README.md          # Project documentation
 ```
 
@@ -84,15 +83,15 @@ adil-makhdoom/
 4. Open your browser and visit `http://localhost:8000`
 
 ### Contact Form Setup
-To enable the contact form:
+The contact form uses [Formspree](https://formspree.io/) for static hosting compatibility:
 
-1. Sign up for a [Mailgun](https://www.mailgun.com/) account
-2. Get your API key and domain
-3. Update `send_email.php` with your credentials:
-   ```php
-   $api_key = 'your-mailgun-api-key';
-   $domain = 'your-mailgun-domain';
+1. Sign up for a free [Formspree](https://formspree.io/) account
+2. Create a new form and get your form endpoint
+3. Update the form action in `index.html`:
+   ```html
+   <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
    ```
+4. The form is already configured and will work on GitHub Pages!
 
 ## 🌐 Live Demo
 
